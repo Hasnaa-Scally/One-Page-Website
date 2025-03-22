@@ -1,0 +1,53 @@
+body {
+    background-color: #1c1c1c;
+    color: white;
+    font-family: Verdana, sans-serif;
+    padding: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.thumb-3 {
+    width: 160px;
+    height: 100px;
+    border-radius: 4px;
+    border: none;
+    transition: opacity 0.3s;
+}
+
+.thumb-3:hover {
+    opacity: 0.7;
+}
+
+.lightbox-3 {
+    position: fixed;
+    inset: 0;
+    background-color: rgba(10, 10, 10, 0.9);
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.lightbox-3.show {
+    display: flex;
+}
+
+.lightbox-3 img {
+    border-radius: 5px;
+    max-width: 95%;
+    max-height: 95%;
+}
+
+.close-3 {
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 26px;
+    color: #fff;
+    cursor: pointer;
+}
